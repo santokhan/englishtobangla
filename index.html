@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="apple-touch-icon" type="text/png" href="img/touch/48.png" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <title>SOOVLE</title>
+</head>
+
+<body class="sm:h-screen sm:overflow-hidden ">
+    <header class="flex justify-center bg-white shadow">
+        <div class="text-gray-900 py-2 text-2xl font-medium">Bengali Forum</div>
+    </header>
+
+    <main class="py-6">
+        <div class="flex py-6 sm:py-10">
+            <div class="w-2/12 hidden sm:flex justify-center px-2">
+                <!-- Ezoic - sidebar - sidebar -->
+                <div id="ezoic-pub-ad-placeholder-128"> </div>
+                <img src="./img/ads.png" alt="ads">
+                <!-- End Ezoic - sidebar - sidebar -->
+            </div>
+
+            <div class="w-full sm:w-8/12 px-2 overflow-y-auto search-container rounded-xl border">
+                <section class="pt-7">
+                    <div class="flex justify-center sm:hidden">
+                        <!-- Ezoic - under_page_title - under_page_title -->
+                        <div id="ezoic-pub-ad-placeholder-136"> </div>
+                        <img src="./img/ads_mobile.png" alt="ads">
+                        <!-- End Ezoic - under_page_title - under_page_title -->
+                    </div>
+                </section>
+
+                <div class="pt-3 sm:text-2xl font-medium text-center">A to Z English to Bengali Dictionary</div>
+
+                <div class="rounded-xl sm:rounded-2xl sm:py-6 lg:px-12 lg:pb-11">
+                    <!------------- Form  ------------->
+                    <div id="formContainer">
+                        <form class="py-0 px-4 sm:p-4 md:px-10 md:py-4" id="analyze" name="analyze">
+                            <div class="sm:px-2 md:px-10 flex item-center relative">
+                                <input class="w-full py-3 px-6 rounded-full appearance-none border-2 border-white leading-tight focus:outline-none  focus:border-gray-900 shadow-lg" id="search"
+                                    required name="search" placeholder="Type your word to translate">
+                                <button type="submit" title="form_submit" class="absolute right-4 sm:right-14 top-3"><i class="fas fa-search text-xl"></i></button>
+                            </div>
+                        </form>
+
+                        <div class="p-2 flex hidden" id="suggestionsContainer">
+                            <div class="w-3/12 font-medium text-end">Did you mean: </div>
+                            <div class="w-9/12 flex flex-wrap" id="didYouMean"><span class="suggestions px-2 hover:underline cursor-pointer"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="" id="section">
+                        <div class="grid grid-cols-2 gap-4 px-5 py-4 bg-white rounded-lg shadow-md mt-10 text-gray-900 font-medium">
+                            <div class="bg-gray-100 px-5 pt-4 pb-8 rounded-lg">
+                                <div class="text-2xl" id="word"></div>
+                            </div>
+                            <div class="bg-gray-100 px-5 pt-4 pb-8 rounded-lg">
+                                <div class="text-2xl" id="wordBan"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-2/12 hidden sm:flex justify-center px-2">
+                <!-- Ezoic - sidebar - sidebar -->
+                <div id="ezoic-pub-ad-placeholder-128"> </div>
+                <img src="./img/ads.png" alt="ads">
+                <!-- End Ezoic - sidebar - sidebar -->
+            </div>
+        </div>
+    </main>
+
+    <!-- <div class="headingcontainer">
+        <p>English to Bangla Dictionary</p>
+    </div>
+    <div class="textcontainer">
+        <input type="text" class="input" id="keyword" onkeyup="emptyTextfield()" size="50" placeholder="Type a word..."><br><br>
+    </div>
+    <div class="buttoncontainer">
+        <button class="button" onclick="search()">Search</button>
+    </div>
+    <div class="displaycontainer">
+        <p id="display"></p>
+    </div>
+    <div class="errorcontainer">
+        <p id="error"></p>
+    </div>
+    <script src="./js/scrape.js"></script>
+ -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script async src="./js/word.js"></script>
+    <script async src="./js/app.js"></script>
+</body>
+
+</html>
