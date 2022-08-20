@@ -14,7 +14,7 @@ form.addEventListener("submit", function (e) {
   translate.innerHTML = "";
   wordDiv.innerHTML = "";
 
-  if (search.length > 1) {
+  if (search.length > 0) {
     wordFinder(search);
   }
 });
